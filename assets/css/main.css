@@ -1552,20 +1552,21 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
-		body {
-			padding: 4em 0 0 0;
-		}
+    body {
+        padding: 0;   /* ← ここを変更 */
+    }
 
-		#header {
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			bottom: auto;
-			height: 4em;
-			padding: 0 1em;
-			top: 0;
-		}
+    #header {
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        bottom: auto;
+        height: 4em;
+        padding: 0 1em;
+        top: 0;
+    }
+}
 
 			body.is-preload #header {
 				-moz-transform: translateY(-3.4em);
